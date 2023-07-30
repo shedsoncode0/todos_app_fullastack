@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
-      <div className="w-screen h-screen bg-[#191919]">
+      <div className="w-screen h-screen bg-[#191919] overflow-y-scroll overflow-x-hidden">
         <Header />
         <div className="w-full flex justify-center items-center bg-slate-600 bg-gradient-to-b from-gray700 from-50% to-50% to-[#191919]">
           <div className="w-full max-w-2xl flex gap-5 justify-center items-center p-3">
@@ -36,8 +36,12 @@ function App() {
               </h1>
               <h1 className="font-bold text-purple">Completed</h1>
             </div>
-            <div className="py-5 w-full text-gray300">
+            <div className="py-5 w-full text-gray300 space-y-4">
               <TodoCard />
+              <TodoCard />
+              <TodoCard />
+              <TodoCard />
+              
             </div>
           </div>
         </section>
